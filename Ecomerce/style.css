@@ -1,0 +1,55 @@
+.cards,.electronics,.home-app{
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 2px 2px 5px black;
+}
+.x-scroll {
+  display: flex;
+  height: 170px;
+  overflow-x: auto;
+  width: 100vw;
+  scrollbar-width: none;
+}
+.content{
+        background-color: #e8eaf1;
+        padding: auto;
+        margin: auto;
+}
+
+.scroll-1 {
+  border: 2px solid #e6dfde;
+  flex: 0 0 1500px;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: center;
+  align-items: center;
+}
+.card{
+    margin: 8px;
+}
+.card:hover{
+    border-radius: 20px;
+    transform: scale(1.05);
+    filter: drop-shadow(5px 5px 5px black);
+    
+}
+.card img{
+    width: 250px;
+    height: 300px;
+}
+.click-button{
+    background-color: antiquewhite;
+}
+#scroll-img{
+    width: 100%;
+    height: 150px;
+}
+.card .btn:hover {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}

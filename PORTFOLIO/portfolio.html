@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .home,.About-me-page,.Educational-background-page,.Projects-page,.Hobbies-page,.Contact-me-page{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    width: 98.5vw;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    background-color: #476ef7/*rgb(0, 180, 27)*/;
+    justify-content: space-between;
+    height: 9vh;
+    border: 2px solid black;
+    margin-top: 0px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+#logo{
+        margin-left:5px;
+        margin-top: 3px;
+}
+.nav-rigtht{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    align-items: center;
+    
+    
+}
+
+.nav-element{
+    height:5vh;
+    color: #0a0a0a;
+    margin: 10px;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.home-left{
+    width: 40vw;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 85vh;
+}
+#pic{
+    height: 85vh;
+    width: 20wh;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(5px 5px 5px black);
+}
+.home-right{
+width: 50wh;
+color: white;
+text-align: center;
+align-items: center;
+margin-top: 0%;
+overflow: hidden;
+}
+.solid-circle{
+    padding: 25%;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #476ef7;
+    z-index: -1;
+    right: -375px;
+    top: -10px;
+    filter: drop-shadow(-3px 3px 3px black);
+}
+.intro{
+
+    font-size: 75px;
+    font-family: cursive;
+    font-weight: bolder;
+    color: black;
+}
+.name-lokesh{
+    font-size: 90px;
+    font-family: cursive;
+    font-weight: bolder;
+    letter-spacing: 20px;
+    text-shadow: 10px;
+    padding-left: 20px;
+    color: black;
+
+}
+.this-is{
+    font-size: 50px;
+    font-family:monospace;
+    font-weight: bolder;
+    color:black;
+}
+#logo{
+    height: 80px;
+    width: 120px;
+    cursor: pointer;
+}
+.About-me,.Projects,.Projects{
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+.About-me-element{
+    border: 4px solid blue;
+    border-radius: 10px;
+  
+    transition: .5s;
+}
+.About-me-element:hover{
+    border: 4px solid black;
+    background-color: #476ef7;
+    filter: drop-shadow(5px 5px 15px black);
+    color: black;
+}
+
+.edu-element{
+    border: 4px solid blue;
+    border-radius: 10px;
+  
+    transition: 0.5s;
+}
+.edu-element:hover{
+    border: 4px solid black;
+    background-color: #476ef7;
+    filter: drop-shadow(5px 5px 15px black);
+    color: black;
+}
+
+.Project-element{
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+    filter: drop-shadow(3px 3px 3px white);
+    transition: 0.5s;
+}
+.Project-element:hover{
+    border: 3px solid #ffffff;
+    background-color: #476ef7;
+    filter: drop-shadow(5px 5px 15px black);
+}
+
+.Educational-background{
+    
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+.Educational-background-both{
+    display: flex;
+    flex-direction: row;
+}
+.edu-left{
+    width: 65vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.edu-right{
+    width: 35vw;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.bar{
+        display: block;
+        height: 20px;
+        border: 1px solid rgb(0, 0, 0,0.3);
+        background: #353b48;
+        border-radius: 10px;
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg,rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
+}
+
+
+.Schooling-bar{
+    width: 82%;
+    animation: Schooling-bar 3s;
+    border-radius: 10px;
+    transition:0.5s;
+}
+
+.Intermediate-bar{
+    width: 71.1%;
+    animation: Intermediate-bar 3s;
+    border-radius: 10px;
+    transition:0.5s;
+}
+
+.B-tech-bar{
+    width: 71.94%;
+    animation: B-tech-bar 3s;
+    border-radius: 10px;
+    transition:0.5s;
+}
+
+.bar:hover{
+    .Schooling-bar,.Intermediate-bar,.B-tech-bar{
+        width: 0;
+    }
+}
+
+
+.Hobbies{
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.Hobbies-element{
+    border: 4px solid blue;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.Hobbies-element:hover{
+    border: 4px solid black;
+    border-radius: 10px;
+    background-color:lightsteelblue;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+#Hobbies-image{
+    height: 150px;
+}
+
+.element{
+    border: 4px solid blue;
+}
+h1{
+    color: black;
+    text-align: center;
+}
+.heading{
+    font-family:monospace;
+    font-size: 40px;
+    text-decoration: underline palevioletred;
+}
+.side-heading{
+    text-decoration: underline blue;
+}
+.para-content{
+    
+
+    padding: 5%;
+    word-spacing: 15PX;
+    font-family: bold;
+    font-weight: bolder;
+    font-size: large;
+}
+.About-me-content{
+    line-height: 300%;
+    padding: 5%;
+    word-spacing: 15PX;
+    font-family: bold;
+    font-weight: bolder;
+    font-size: x-large;
+}
+#social-media-logo{
+    height: 80px;
+}
+.nav-element{
+    position: relative;
+    text-decoration: none;
+    font-family: 'poppins',sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+.nav-element:after{
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 15px;
+    transition: 0.3s;
+}
+.nav-element:hover{
+    color: #ffffff;
+}
+.nav-element:hover:after{
+    width: 100%;
+}
+
+
+.Contact-me-social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    bottom: 0%;
+    text-align: center;
+}
+.Contact-me-element{
+    color: white;
+    transition: 0.5s;
+}
+.Contact-me-element:hover{
+    color: black;
+    filter: drop-shadow(5px 5px 5px white);
+}
+
+.Contact-me-up{
+    display: flex;
+    justify-content: center;
+
+}
+
+.Contact-me-details{
+
+    border-radius: 10px;
+}
+
+#sender-email{
+    height: 30px;
+    width: 350px;
+}
+
+button{
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #476ef7;
+    color: white;
+    letter-spacing: 1px;
+    filter: drop-shadow(3px 3px 3px solid black);
+}
+
+/* Page Stylings */
+.solid-circle-About-me{
+    padding: 25%;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #476ef7;
+    z-index: -1;
+    justify-content: center;
+    width: 80vw;
+    top: -590px;
+    filter: drop-shadow(5px 5px 5px black);
+}
+.solid-circle1-Educational-background{
+    padding: 25%;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #476ef7;
+    z-index: -1;
+    right: -325px;
+    top: -10px;
+    filter: drop-shadow(-3px 3px 3px black);
+}
+
+.solid-circle2-Educational-background{
+    padding: 25%;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #476ef7;
+    z-index: -1;
+    left: -325px;
+    top: -80%;
+    filter: drop-shadow(3px 3px 3px black);
+}
+
+.solid-circle3-Educational-background{
+    padding: 25%;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #476ef7;
+    z-index: -1;
+    left: -325px;
+    bottom: -80%;
+    filter: drop-shadow(3px -3px 3px black);
+}
+
+.solid-circle1-projects{
+    padding: 25%;
+    position: absolute;
+    background-color: #476ef7;
+    z-index: -1;
+    right: -235px;
+    top: -10px;
+    filter: drop-shadow(-5px 5px 5px black);
+}
+.solid-circle2-projects{
+    padding: 25%;
+    position: absolute;
+    background-color: #476ef7;
+    z-index: -1;
+    left: -235px;
+    top: -10px;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+.solid-circle-Hobbies{
+    padding: 25%;
+    justify-content: center;
+    top: -85%;
+    width: 100%;
+    position: absolute;
+    background-color: #476ef7;
+    z-index: -1;
+
+    filter: drop-shadow(3px 3px 3px black);
+}
+
+.solid-circle2-Hobbies{
+    padding: 25%;
+    justify-content: center;
+    bottom: -85%;
+    width: 100%;
+    position: absolute;
+    background-color: #476ef7;
+    z-index: -1;
+
+    filter: drop-shadow(3px -3px 3px black);
+}
+
+.solid-circle1-contact-me{
+    border: 2px solid black;
+    padding: 25%;
+    justify-content: center;
+    bottom: -72%;
+    width: 100%;
+    position: absolute;
+    background-color: #476ef7;
+    z-index: -1;
+}
+
+    </style>
+
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="nav">
+        
+            <div class="nav-left"><img src="./kl-logo.jpg" alt="logo here" id="logo" style="width: 100px; height: 60px;">
+            </div>
+            <div class="nav-rigtht">
+                <a href="#home"><div class="nav-element">Home</div></a>
+                <a href="#About-me"><div class="nav-element">About-me</div></a>
+                <a href="#Educational-background"><div class="nav-element">Educational-background</div></a>
+                <a href="#Hobbies"><div class="nav-element">Hobbies</div></a>
+                <a href="#Projects"><div class="nav-element">Projects</div></a>
+                <a href="#Contact-me"><div class="nav-element">Contact-me</div></a>
+            </div>
+        
+    </div>
+        <div class="home" id="home">  
+            <div class="home-left"><img src="./lokesh-image.png" alt="Lokesh Image" id="pic"></div>
+            <div class="home-right">
+                <div class="solid-circle"></div>
+                <div class="intro"><p>Hello !</p></div>
+                <p class="this-is">This is</p>
+                <h1 class="name-lokesh">LOKESH</h1>
+            </div>
+        </div>
+    <hr>
+    <div class="About-me-page" id="About-me">
+    <h1 class="heading">About-me</h1>
+
+        <div class="About-me">
+            <div class="solid-circle-About-me"></div>
+            <div class="About-me-element">
+                <p class="About-me-content">My name is <q>KAGITHA LOKESH</q>. I was born and brought up in Vadali , Mudinepalli Mandal , Krishna District , Andhra Pradesh. <br>I am 21 years old , born on August 17 , 2003 . I am male and Currently reside at 1-68/A , Vadali , Mudinepalli , Krishna , Andhra Pradesh.</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="Educational-background-page">
+        <div class="solid-circle1-Educational-background"></div>
+        <div class="solid-circle2-Educational-background"></div>
+        <div class="solid-circle3-Educational-background"></div>
+        <h1 class="heading" id="Educational-background">Educational-background</h1>
+        <div class="Educational-background-both">
+        <div class="Educational-background">
+            <div class="edu-left">
+            <div class="edu-element"><h3 class="side-heading">Schooling</h3>
+                <p class="para-content">I was studied LKG to 5th class in<br>Sri Gayathri Vidhyanikethan<br>english medium school,Vadali.<br>I was studied 5th - 10th class<br>in Sahayamatha English medium school,<br>Mudinepalli.And I completed my 10th<br>in Sahayamatha in the year 2020.</p>
+            </div>
+            <div class="edu-element"><h3 class="side-heading">Intermediate</h3>
+                <p class="para-content">I completed my Intermediate<br>in Sri Chaitnaya Jr.College<br>Gudivada (2020-2022)</p>
+            </div>
+            <div class="edu-element"><h3 class="side-heading">B-Tech(under-graduation)</h3>
+                <p class="para-content">Currently I am pursuing a degree<br>in Sri Vasavi Isstitue of Engineering & TEchnalogy <br>Nandamuru.</p>
+            </div>
+        </div>
+        </div>
+        <div class="edu-right">
+            <div class="edu-logo"><h1>Percentage</h1></div>
+            <li><h3>Schooling : 82 %</h3>
+                <span class="bar"><span class="Schooling-bar"></span></span>
+            </li>
+            <li><h3>Intermediate : 71.1 %</h3>
+                <span class="bar"><span class="Intermediate-bar"></span></span>
+            </li>
+            <li><h3>B-tech : 71.94 %</h3>
+                <span class="bar"><span class="B-tech-bar"></span></span>
+            </li>
+        </div>
+        </div>
+    </div>
+        <hr>
+        <hr>
+        <div class="Educational-background-page">
+            <div class="solid-circle-Hobbies"></div>
+            <div class="solid-circle2-Hobbies"></div>
+            <h1 class="heading" id="Hobbies">Hobbies</h1>
+            <div class="Hobbies">
+                <div class="Hobbies-element"><h3 class="side-heading">Watching Movies</h3>
+                    <p class="para-content">I enjoy watching movies <br> across various genres. <br> Cinema helps me understand<br>different perspectives.</p>
+                <img src="./cinema_logo.png" alt="cinema_logo" id="Hobbies-image">
+                </div>
+                <div class="Hobbies-element"><h3 class="side-heading">Watching Anime</h3>
+                    <p class="para-content">Anime captivates me with its <br> unique art styles , deep narratives,<br> and imaginative worlds.</p>
+                <img src="./anime_logo.jpg" alt="anime_logo" id="Hobbies-image">
+                </div>
+                <div class="Hobbies-element"><h3 class="side-heading">Memes & meme video Editing</h3>
+                    <p class="para-content">I love making memes and videos by <br>blending humor and creativity.</p>
+                <img src="./edit_logo.png" alt="edit_logo" id="Hobbies-image">
+                </div>
+                <div class="Hobbies-element"><h3 class="side-heading">Playing Video Games</h3>
+                    <p class="para-content">Gaming, especially BGMI,<br>excites me with its <br>strategy, teamwork, <br>competitive thrill.</p>
+                <img src="./BGMI_logo.png" alt="BGMI_logo" id="Hobbies-image">
+                </div>
+            
+            </div>
+            </div>
+        </div>
+            <hr>
+        <div class="Projects-page">
+        <h1 class="heading" id="Projects">Projects</h1>
+        <div class="solid-circle1-projects"></div>
+        <div class="solid-circle2-projects"></div>
+        <div class="Projects">
+            <div class="Project-element"><h3 class="side-heading">Project 1</h3>
+                <p class="para-content">I haven't done any Project yet. <br> In future I will uodate the Project details. <br>Which I was going to do.</p>
+            </div>
+            <div class="Project-element"><h3 class="side-heading">Project 2</h3>
+                <p class="para-content">I haven't done any Project yet. <br> In future I will update the Project details. <br>Which I was going to do.</p>
+            </div>
+            <div class="Project-element"><h3 class="side-heading">Project 3</h3>
+                <p class="para-content">I haven't done any Project yet. <br> In future I will update the Project details. <br>Which I was going to do.</p>
+            </div>
+        </div>
+    </div>
+        <hr>
+        <div class="Contact-me-page">
+            <h1 class="heading" id="Contact-me">Contact-me</h1>
+            <div class="solid-circle1-contact-me"></div>
+            <div class="solid-circle2-contact-me"></div>
+            <div class="Contact-me-up">
+                <div class="Contact-me-details">
+                    <form action="/submit" method="post">
+                        <label for="sender-email">Email : </label><br>
+                        <input type="email" name="sender-email" id="sender-email" placeholder="Enter your E-mail" required><br><br>
+                        <label for="description">Write description : </label><br>
+                        <textarea name="description" id="description" cols="50" rows="10" placeholder="Type the description here...."></textarea><br><br>
+                        <button>Submit</button>
+                    </form>
+                    <h4>Mobile No : 7032817065 <br> E-mail : kagithalokesh08@gmail.com</h4>
+                </div>
+
+            </div><br><br>
+            <div class="Contact-me-social-media">
+                <div class="Contact-me-element">
+                <a href="https://www.instagram.com/lokesh___kagitha?igsh=MTF0czM5N2FuZHJleQ==">
+                    <img src="./instagram-logo.png" alt="instagram-logo" id="social-media-logo" ><br>
+                    <h3 class="side-heading" style="color: white;">Instagram</h3>
+                </a>
+                
+                </div>
+                <div class="Contact-me-element">
+                <a href="https://www.facebook.com/lokesh.kagitha.1">
+                    <img src="./facebook-logo.png" alt="facebook-logo" id="social-media-logo" ><br>
+                    <h3 class="side-heading" style="color: white;">Facebook</h3>
+                </a>
+                
+                </div>
+                <div class="Contact-me-element">
+                <a href="https://x.com/Lokesh_kagitha_?t=ms8Ya7aQdBJ1DAZ_ZYhxFw&s=08">
+                    <img src="./x-logo.png" alt="x-logo" id="social-media-logo" ><br>
+                    <h3 class="side-heading" style="color: white;">X</h3>
+                </a>
+                
+                </div>
+                <div class="Contact-me-element">
+                    <a href="https://www.linkedin.com">
+                        <img src="./linkdin-logo.png" alt="linkdin-logo" id="social-media-logo" ><br>
+                        <h3 class="side-heading" style="color: white;">Linkdin</h3>
+                    </a>
+                
+                </div>
+            </div>
+        </div>
+</body>
+</html>

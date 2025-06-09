@@ -1,0 +1,462 @@
+.home,.About-me-page,.Educational-background-page,.Projects-page,.Hobbies-page,.Contact-me-page{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    width: 98.5vw;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    background-color: #476ef7/*rgb(0, 180, 27)*/;
+    justify-content: space-between;
+    height: 9vh;
+    border: 2px solid black;
+    margin-top: 0px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+#logo{
+        margin-left:5px;
+        margin-top: 3px;
+}
+.nav-rigtht{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    align-items: center;
+    
+    
+}
+
+.nav-element{
+    height:5vh;
+    color: #0a0a0a;
+    margin: 10px;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.home-left{
+    width: 40vw;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 85vh;
+}
+#pic{
+    height: 85vh;
+    width: 20wh;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(5px 5px 5px black);
+}
+.home-right{
+width: 50wh;
+color: white;
+text-align: center;
+align-items: center;
+margin-top: 0%;
+overflow: hidden;
+}
+.solid-circle{
+    padding: 25%;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #476ef7;
+    z-index: -1;
+    right: -375px;
+    top: -10px;
+    filter: drop-shadow(-3px 3px 3px black);
+}
+.intro{
+
+    font-size: 75px;
+    font-family: cursive;
+    font-weight: bolder;
+    color: black;
+}
+.name-lokesh{
+    font-size: 90px;
+    font-family: cursive;
+    font-weight: bolder;
+    letter-spacing: 20px;
+    text-shadow: 10px;
+    padding-left: 20px;
+    color: black;
+
+}
+.this-is{
+    font-size: 50px;
+    font-family:monospace;
+    font-weight: bolder;
+    color:black;
+}
+#logo{
+    height: 80px;
+    width: 120px;
+    cursor: pointer;
+}
+.About-me,.Projects,.Projects{
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+.About-me-element{
+    border: 4px solid blue;
+    border-radius: 10px;
+  
+    transition: .5s;
+}
+.About-me-element:hover{
+    border: 4px solid black;
+    background-color: #476ef7;
+    filter: drop-shadow(5px 5px 15px black);
+    color: black;
+}
+
+.edu-element{
+    border: 4px solid blue;
+    border-radius: 10px;
+  
+    transition: 0.5s;
+}
+.edu-element:hover{
+    border: 4px solid black;
+    background-color: #476ef7;
+    filter: drop-shadow(5px 5px 15px black);
+    color: black;
+}
+
+.Project-element{
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+    filter: drop-shadow(3px 3px 3px white);
+    transition: 0.5s;
+}
+.Project-element:hover{
+    border: 3px solid #ffffff;
+    background-color: #476ef7;
+    filter: drop-shadow(5px 5px 15px black);
+}
+
+.Educational-background{
+    
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+.Educational-background-both{
+    display: flex;
+    flex-direction: row;
+}
+.edu-left{
+    width: 65vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.edu-right{
+    width: 35vw;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.bar{
+        display: block;
+        height: 20px;
+        border: 1px solid rgb(0, 0, 0,0.3);
+        background: #353b48;
+        border-radius: 10px;
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg,rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
+}
+
+
+.Schooling-bar{
+    width: 82%;
+    animation: Schooling-bar 3s;
+    border-radius: 10px;
+    transition:0.5s;
+}
+
+.Intermediate-bar{
+    width: 71.1%;
+    animation: Intermediate-bar 3s;
+    border-radius: 10px;
+    transition:0.5s;
+}
+
+.B-tech-bar{
+    width: 71.94%;
+    animation: B-tech-bar 3s;
+    border-radius: 10px;
+    transition:0.5s;
+}
+
+.bar:hover{
+    .Schooling-bar,.Intermediate-bar,.B-tech-bar{
+        width: 0;
+    }
+}
+
+
+.Hobbies{
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.Hobbies-element{
+    border: 4px solid blue;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.Hobbies-element:hover{
+    border: 4px solid black;
+    border-radius: 10px;
+    background-color:lightsteelblue;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+#Hobbies-image{
+    height: 150px;
+}
+
+.element{
+    border: 4px solid blue;
+}
+h1{
+    color: black;
+    text-align: center;
+}
+.heading{
+    font-family:monospace;
+    font-size: 40px;
+    text-decoration: underline palevioletred;
+}
+.side-heading{
+    text-decoration: underline blue;
+}
+.para-content{
+    
+
+    padding: 5%;
+    word-spacing: 15PX;
+    font-family: bold;
+    font-weight: bolder;
+    font-size: large;
+}
+.About-me-content{
+    line-height: 300%;
+    padding: 5%;
+    word-spacing: 15PX;
+    font-family: bold;
+    font-weight: bolder;
+    font-size: x-large;
+}
+#social-media-logo{
+    height: 80px;
+}
+.nav-element{
+    position: relative;
+    text-decoration: none;
+    font-family: 'poppins',sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+.nav-element:after{
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 15px;
+    transition: 0.3s;
+}
+.nav-element:hover{
+    color: #ffffff;
+}
+.nav-element:hover:after{
+    width: 100%;
+}
+
+
+.Contact-me-social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    bottom: 0%;
+    text-align: center;
+}
+.Contact-me-element{
+    color: white;
+    transition: 0.5s;
+}
+.Contact-me-element:hover{
+    color: black;
+    filter: drop-shadow(5px 5px 5px white);
+}
+
+.Contact-me-up{
+    display: flex;
+    justify-content: center;
+
+}
+
+.Contact-me-details{
+
+    border-radius: 10px;
+}
+
+#sender-email{
+    height: 30px;
+    width: 350px;
+}
+
+button{
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #476ef7;
+    color: white;
+    letter-spacing: 1px;
+    filter: drop-shadow(3px 3px 3px solid black);
+}
+
+/* Page Stylings */
+.solid-circle-About-me{
+    padding: 25%;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #476ef7;
+    z-index: -1;
+    justify-content: center;
+    width: 80vw;
+    top: -590px;
+    filter: drop-shadow(5px 5px 5px black);
+}
+.solid-circle1-Educational-background{
+    padding: 25%;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #476ef7;
+    z-index: -1;
+    right: -325px;
+    top: -10px;
+    filter: drop-shadow(-3px 3px 3px black);
+}
+
+.solid-circle2-Educational-background{
+    padding: 25%;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #476ef7;
+    z-index: -1;
+    left: -325px;
+    top: -80%;
+    filter: drop-shadow(3px 3px 3px black);
+}
+
+.solid-circle3-Educational-background{
+    padding: 25%;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #476ef7;
+    z-index: -1;
+    left: -325px;
+    bottom: -80%;
+    filter: drop-shadow(3px -3px 3px black);
+}
+
+.solid-circle1-projects{
+    padding: 25%;
+    position: absolute;
+    background-color: #476ef7;
+    z-index: -1;
+    right: -235px;
+    top: -10px;
+    filter: drop-shadow(-5px 5px 5px black);
+}
+.solid-circle2-projects{
+    padding: 25%;
+    position: absolute;
+    background-color: #476ef7;
+    z-index: -1;
+    left: -235px;
+    top: -10px;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+.solid-circle-Hobbies{
+    padding: 25%;
+    justify-content: center;
+    top: -85%;
+    width: 100%;
+    position: absolute;
+    background-color: #476ef7;
+    z-index: -1;
+
+    filter: drop-shadow(3px 3px 3px black);
+}
+
+.solid-circle2-Hobbies{
+    padding: 25%;
+    justify-content: center;
+    bottom: -85%;
+    width: 100%;
+    position: absolute;
+    background-color: #476ef7;
+    z-index: -1;
+
+    filter: drop-shadow(3px -3px 3px black);
+}
+
+.solid-circle1-contact-me{
+    border: 2px solid black;
+    padding: 25%;
+    justify-content: center;
+    bottom: -72%;
+    width: 100%;
+    position: absolute;
+    background-color: #476ef7;
+    z-index: -1;
+}

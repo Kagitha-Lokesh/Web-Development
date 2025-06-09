@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jilebi Restaurent Soups</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-left"><p><a href="index.html" id="nav-name">Hotel Jilebi</a></p></div>
+        <div class="nav-right">
+            <div class="nav-right-top">
+                <div class="soups"><a href="#table-soup" id="nav-soups">Soups</a></div>
+                <div class="veg-strs"><a href="#table-veg-starters" id="nav-veg-strs">Veg Starters</a></div>
+                <div class="non-veg-strs"><a href="#table-non-veg-starters" id="nav-non-veg-strs">Non Veg Starters</a></div>
+                <div class="roti"><a href="#table-rotis" id="nav-roti">Roti's</a></div>
+                <div class="veg-curry"><a href="#table-veg-curries" id="nav-veg-curry">Veg Curries</a></div>
+            </div>
+                <div class="nav-right-down">
+                    <div class="non-veg-curry"><a href="#table-non-veg-curries" id="nav-non-veg-curry">Non Veg Curries</a></div>
+                    <div class="main-course"><a href="#table-main-course" id="nav-main-course">Main Course</a></div>
+                    <div class="desserts"><a href="#table-desserts" id="nav-desserts">Desserts</a></div>
+                    <div class="drinks"><a href="#cool-drinks" id="nav-drinks">Cool Drinks</a></div>
+                </div>
+        </div>   
+    </div>
+    <div class="main-content">
+        <div class="menu-items">
+            <table id="table-soup" >
+                <caption style="padding-left: 400px;">Soups 🥣</caption>
+                <tr>
+                    <th>Items</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Tomato Soup</td>
+                    <td>₹60</td>
+                    <td class="item-add-btn" onclick="addItem('Tomato Soup', 60)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Sweet Corn Soup</td>
+                    <td>₹70</td>
+                    <td class="item-add-btn" onclick="addItem('Sweet Corn Soup', 70)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Hot and Sour Soup(veg)</td>
+                    <td>₹75</td>
+                    <td class="item-add-btn" onclick="addItem('Hot and Sour Soup(veg)', 75)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Hot and Sour Soup(Chicken)</td>
+                    <td>₹95</td>
+                    <td class="item-add-btn" onclick="addItem('Hot and Sour Soup(Chicken)', 95)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Manchow Soup</td>
+                    <td>₹80</td>
+                    <td class="item-add-btn" onclick="addItem('Manchow Soup', 80)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Manchow Soup</td>
+                    <td>₹90</td>
+                    <td class="item-add-btn" onclick="addItem('Manchow Soup', 90)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Manchow Soup (Chicken)</td>
+                    <td>₹100</td>
+                    <td class="item-add-btn" onclick="addItem('Manchow Soup (Chicken)', 100)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Mutton Bone Soup</td>
+                    <td>₹110</td>
+                    <td class="item-add-btn" onclick="addItem('Mutton Bone Soup',110)"><button>+</button></td>
+                </tr>
+            </table>
+            <hr>
+            <table id="table-veg-starters" >
+                <caption>Veg Starters 🥗</caption>
+                <tr>
+                    <th>Items</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Gobi 65</td>
+                    <td>₹110</td>
+                    <td class="item-add-btn" onclick="addItem('Gobi 65',110)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Paneer 65</td>
+                    <td>₹130</td>
+                    <td class="item-add-btn" onclick="addItem('Paneer 65',130)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Baby Corn Manchurian</td>
+                    <td>₹120</td>
+                    <td class="item-add-btn" onclick="addItem('Baby Corn Manchurian',120)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Veg Spring Rolls</td>
+                    <td>₹100</td>
+                    <td class="item-add-btn" onclick="addItem('Veg Spring Rolls',100)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Chilli Mushroom</td>
+                    <td>₹130</td>
+                    <td class="item-add-btn" onclick="addItem('Chilli Mushroom',130)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Stuffed Mirchi Bajji</td>
+                    <td>₹90</td>
+                    <td class="item-add-btn" onclick="addItem('Stuffed Mirchi Bajji',90)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Paneer Tikka</td>
+                    <td>₹150</td>
+                    <td class="item-add-btn" onclick="addItem('Paneer Tikka',150)"><button>+</button></td>
+                </tr>
+
+            </table>
+            <hr>
+            <table id="table-non-veg-starters" >
+                <caption>Non-Veg Starters 🍗</caption>
+                <tr>
+                    <th>Items</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Chicken 65</td>
+                    <td>₹140</td>
+                    <td class="item-add-btn" onclick="addItem('Chicken 65',140)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Chilli Chicken</td>
+                    <td>₹150</td>
+                    <td class="item-add-btn" onclick="addItem('Chilli Chicken',150)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Pepper Chicken</td>
+                    <td>₹160</td>
+                    <td class="item-add-btn" onclick="addItem('Pepper Chicken',160)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Chicken Lollipop (4 pcs)</td>
+                    <td>₹130</td>
+                    <td class="item-add-btn" onclick="addItem('Chicken Lollipop (4 pcs)',130)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Chicken Wings (6 pcs)</td>
+                    <td>₹150</td>
+                    <td class="item-add-btn" onclick="addItem('Chicken Wings (6 pcs)',150)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Prawns Fry</td>
+                    <td>₹200</td>
+                    <td class="item-add-btn" onclick="addItem('Prawns Fry',200)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Mutton Kebab</td>
+                    <td>₹210</td>
+                    <td class="item-add-btn" onclick="addItem('Mutton Kebab',210)"><button>+</button></td>
+                </tr>
+
+            </table>
+            <hr>
+            <table id="table-rotis" >
+                <caption>Roti's 🫓</caption>
+                <tr>
+                    <th>Items</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Tandoori Roti</td>
+                    <td>₹25</td>
+                    <td class="item-add-btn" onclick="addItem('Tandoori Roti',25)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Butter Roti</td>
+                    <td>₹30</td>
+                    <td class="item-add-btn" onclick="addItem('Butter Roti',30)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Plain Naan</td>
+                    <td>₹30</td>
+                    <td class="item-add-btn" onclick="addItem('Plain Naan',30)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Butter Naan</td>
+                    <td>₹40</td>
+                    <td class="item-add-btn" onclick="addItem('Butter Naan',40)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Garlic Naan</td>
+                    <td>₹45</td>
+                    <td class="item-add-btn" onclick="addItem('Garlic Naan',45)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Paneer Kulcha</td>
+                    <td>₹50</td>
+                    <td class="item-add-btn" onclick="addItem('Paneer Kulcha',50)"><button>+</button></td>
+                </tr>
+
+            </table>
+            <hr>
+            <table id="table-veg-curries" >
+                <caption> Veg Curries 🥘</caption>
+                <tr>
+                    <th>Items</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Paneer Butter Masala</td>
+                    <td>₹160</td>
+                    <td class="item-add-btn" onclick="addItem('Paneer Butter Masala',160)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Kadai Veg</td>
+                    <td>₹140</td>
+                    <td class="item-add-btn" onclick="addItem('Kadai Veg',140)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Aloo Gobi Curry</td>
+                    <td>₹120</td>
+                    <td class="item-add-btn" onclick="addItem('Aloo Gobi Curry',120)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Mixed Vegetable Curry</td>
+                    <td>₹130</td>
+                    <td class="item-add-btn" onclick="addItem('Mixed Vegetable Curry',130)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Gutthi Vankaya Curry</td>
+                    <td>₹140</td>
+                    <td class="item-add-btn" onclick="addItem('Gutthi Vankaya Curryv',140)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Tomato Pappu</td>
+                    <td>₹100</td>
+                    <td class="item-add-btn" onclick="addItem('Tomato Pappu',100)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Bendakaya Fry</td>
+                    <td>₹110</td>
+                    <td class="item-add-btn" onclick="addItem('Bendakaya Fry',110)"><button>+</button></td>
+                </tr>
+            </table>
+            <hr>
+            <table id="table-non-veg-curries" >
+                <caption>Non-Veg Curries 🍖</caption>
+                <tr>
+                    <th>Items</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Andhra Chicken Curry</td>
+                    <td>₹170</td>
+                    <td class="item-add-btn" onclick="addItem('Andhra Chicken Curry',170)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Butter Chicken</td>
+                    <td>₹190</td>
+                    <td class="item-add-btn" onclick="addItem('Butter Chicken',190)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Mutton Curry</td>
+                    <td>₹210</td>
+                    <td class="item-add-btn" onclick="addItem('Mutton Curry',210)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Chepa Pulusu(Fish Curry)</td>
+                    <td>₹200</td>
+                    <td class="item-add-btn" onclick="addItem('Chepa Pulusu(Fish Curry)',200)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Prawns Curry</td>
+                    <td>₹220</td>
+                    <td class="item-add-btn" onclick="addItem('Prawns Curry',120)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Gongura Chicken Curry</td>
+                    <td>₹180</td>
+                    <td class="item-add-btn" onclick="addItem('Gongura Chicken Curry',180)"><button>+</button></td>
+                </tr>
+            </table>
+            <hr>
+            <table id="table-main-course" >
+                <caption>Main Course 🍛</caption>
+                <tr>
+                    <th>Items</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Veg Biryani</td>
+                    <td>₹130</td>
+                    <td class="item-add-btn" onclick="addItem('Veg Biryani',130)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Paneer Biryani</td>
+                    <td>₹150</td>
+                    <td class="item-add-btn" onclick="addItem('Paneer Biryani',150)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Chicken Biryani</td>
+                    <td>₹180</td>
+                    <td class="item-add-btn" onclick="addItem('Chicken Biryani',180)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Hyderabadi Chicken Biryani</td>
+                    <td>₹200</td>
+                    <td class="item-add-btn" onclick="addItem('Hyderabadi Chicken Biryani',200)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Mutton Biryani</td>
+                    <td>₹220</td>
+                    <td class="item-add-btn" onclick="addItem('Mutton Biryani',220)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Prawns Biryani</td>
+                    <td>₹240</td>
+                    <td class="item-add-btn" onclick="addItem('Prawns Biryani',240)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Chicken Fried Rice</td>
+                    <td>₹120</td>
+                    <td class="item-add-btn" onclick="addItem('Chicken Fried Rice',120)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Egg Fried Rice</td>
+                    <td>₹110</td>
+                    <td class="item-add-btn" onclick="addItem('Egg Fried Rice',110)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Veg Noodles</td>
+                    <td>₹100</td>
+                    <td class="item-add-btn" onclick="addItem('Veg Noodles',100)"><button>+</button></td>
+                </tr><tr>
+                    <td>Chicken Noodles</td>
+                    <td>₹120</td>
+                    <td class="item-add-btn" onclick="addItem('Chicken Noodles',120)"><button>+</button></td>
+                </tr>
+            </table>
+            <hr>
+            <table id="table-desserts" >
+                <caption>Desserts 🍨</caption>
+                <tr>
+                    <th>Items</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Double Ka Meetha</td>
+                    <td>₹70</td>
+                    <td class="item-add-btn" onclick="addItem('Double Ka Meetha',70)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Qubani Ka Meetha</td>
+                    <td>₹80</td>
+                    <td class="item-add-btn" onclick="addItem('Qubani Ka Meetha',80)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Gulab Jamun (2 pcs)</td>
+                    <td>₹50</td>
+                    <td class="item-add-btn" onclick="addItem('Gulab Jamun (2 pcs)',50)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Ice Cream (Scoop)</td>
+                    <td>₹40</td>
+                    <td class="item-add-btn" onclick="addItem('Ice Cream (Scoop)',40)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Carrot Halwa</td>
+                    <td>₹60</td>
+                    <td class="item-add-btn" onclick="addItem('Carrot Halwa',60)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Rasmalai</td>
+                    <td>₹80</td>
+                    <td class="item-add-btn" onclick="addItem('Rasmalai',80)"><button>+</button></td>
+                </tr>
+            </table>
+            <hr>
+            <table id="cool-drinks" >
+                <caption>Cool Drinks 🥤</caption>
+                <tr>
+                    <th>Items</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Fresh Lime Soda</td>
+                    <td>₹40</td>
+                    <td class="item-add-btn" onclick="addItem('Fresh Lime Soda',40)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Buttermilk</td>
+                    <td>₹30</td>
+                    <td class="item-add-btn" onclick="addItem('Buttermilk',30)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Lassi</td>
+                    <td>₹50</td>
+                    <td class="item-add-btn" onclick="addItem('Lassi',50)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Soft Drinks(sprite,Thumb's up)</td>
+                    <td>₹40</td>
+                    <td class="item-add-btn" onclick="addItem('Soft Drinks(sprite,Thumbs up)',40)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Badam Milk</td>
+                    <td>₹60</td>
+                    <td class="item-add-btn" onclick="addItem('Badam Milk',60)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Rose Milk</td>
+                    <td>₹50</td>
+                    <td class="item-add-btn" onclick="addItem('Rose Milk',50)"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td>Falooda</td>
+                    <td>₹90</td>
+                    <td class="item-add-btn" onclick="addItem('Falooda',90)"><button>+</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="order-items">
+            <div class="order-items-title"><h3>Selected Items</h3></div>
+            <div class="order-items-content">
+                <table id="table">
+                <tr>
+                    <th>Items</th>
+                    <th>Price</th>
+                </tr>
+                </table>
+            </div>
+            <div class="order-btn-section">
+                <button type="button" onclick="order()" id="order-btn">Order Items</button>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        let table=document.getElementById("table")
+        console.log("table : ",table)
+        function addItem(name, price) {
+
+            let row=document.createElement("tr")
+            let itemname=document.createElement("td")
+            itemname.innerText=name;
+            /* console.log(itemname) */
+
+            let itemprice=document.createElement("td")
+            itemprice.innerText=price;
+
+            let itemremove = document.createElement("td");
+            let deletebutton = document.createElement("button");
+            deletebutton.innerText = "-"; 
+            
+            itemremove.appendChild(deletebutton);
+
+            row.appendChild(itemname)
+            row.appendChild(itemprice)
+            row.appendChild(itemremove)
+
+            table.appendChild(row)
+
+            deletebutton.onclick=()=> removeItem(row)
+
+            
+        }
+        function removeItem(row){
+            row.remove();
+        }
+        function order() {
+            let table = document.getElementById("table");
+            let rows = table.rows;
+            let output = "";
+            let price="";
+            let oder_price_list=[];
+            let sum;
+
+            for (let i = 0; i < rows.length; i++) {
+                let cells = rows[i].cells;
+                for (let j = 0; j < cells.length; j++) {
+                        output += cells[j].innerText + " ";
+                }
+                output += "\n";
+            }
+            for (let i = 1; i < rows.length; i++) { // skip header row if needed
+            let cells = rows[i].cells;
+            if (cells.length > 1) {
+                oder_price_list[i] += cells[1].innerText ;
+            }
+        }
+        for(i =0 ; i<rows.length;i++){
+            sum +=oder_price_list[i];
+            console.log(sum);
+        }
+        alert(output);
+    }
+    </script>
+</body>
+</html>

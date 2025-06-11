@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesl.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="cal-container">
+        <div class="display" id="display"></div>
+        <div class="btns">
+            <div class="btns-1">
+                <div><button onclick="cal('AC')">AC</button></div>
+                <div><button onclick="cal('()')">()</button></div>
+                <div><button onclick="cal('%')">%</button></div>
+                <div><button onclick="cal('/')">/</button></div>
+            </div>
+            <div class="btns-2">
+                <div><button onclick="cal('7')">7</button></div>
+                <div><button onclick="cal('8')">8</button></div>
+                <div><button onclick="cal('9')">9</button></div>
+                <div><button onclick="cal('*')">X</button></div>
+            </div>
+            <div class="btns-3">
+                <div><button onclick="cal('4')">4</button></div>
+                <div><button onclick="cal('5')">5</button></div>
+                <div><button onclick="cal('6')">6</button></div>
+                <div><button onclick="cal('-')">-</button></div>
+            </div>
+            <div class="btns-4">
+                <div><button onclick="cal('1')">1</button></div>
+                <div><button onclick="cal('2')">2</button></div>
+                <div><button onclick="cal('3')">3</button></div>
+                <div><button onclick="cal('+')">+</button></div>
+            </div>
+            <div class="btns-5">
+                <div><button onclick="cal('0')">0</button></div>
+                <div><button onclick="cal('.')">.</button></div>
+                <div><button onclick="cal('DEL')">DEL</button></div>
+                <div><button onclick="cal('=')">=</button></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let n = "";
+
+        function cal(value) {
+            if (value === "AC") {
+                n="";
+                document.getElementById("display").innerHTML="";
+                
+            }
+            else if(value==="="){
+                document.getElementById("display").innerHTML=eval(n);
+            }
+            else{
+                n+=value;
+                document.getElementById("display").innerHTML=n;
+            }
+        }
+    </script>
+</body>
+</html>

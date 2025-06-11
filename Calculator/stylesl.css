@@ -1,3 +1,13 @@
+body{
+  background-color: aliceblue;
+  text-align: center;
+  height: 97.5vh;
+  align-items: center;
+}
+#heading{
+  font-size: xx-large;
+  font-weight: bolder;
+}
 .cal-container{
     width: 500px;
     height: 600px;
@@ -19,6 +29,8 @@
     font-weight: bolder;
     text-align: end;
     border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 0px;
 }
 .btns{
   background-color: black;
@@ -53,7 +65,7 @@ button{
 }
 button:hover{
   background-color: white;
-  border: 2px solid white;
+  border: 3px solid black;
   color: black;
 }
 button:active{
